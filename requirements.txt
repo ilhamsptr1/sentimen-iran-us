@@ -4,3 +4,4 @@ pandas
 numpy
 emoji
 nltk
+imbalanced-learn
