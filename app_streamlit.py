@@ -66,9 +66,8 @@ def load_model():
 model = load_model()
 
 # --- 3. TAMPILAN ANTARMUKA ---
-st.title("🌐 AI Sentimen Analisis")
+st.title("Analisis Sentimen Perang Amerika Iran")
 st.markdown("### Topik: Konflik Amerika Serikat vs Iran")
-st.write("Aplikasi cerdas berbasis **Multinomial Naive Bayes (Optimized)** untuk mendeteksi opini publik (X / Twitter).")
 
 st.divider()
 
@@ -116,4 +115,3 @@ else:
 
 # Footer
 st.markdown("---")
-st.caption("Dibuat untuk keperluan Skripsi © 2024")
