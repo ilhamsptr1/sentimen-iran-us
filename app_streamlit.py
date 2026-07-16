@@ -1,5 +1,5 @@
 import streamlit as st
-import pickle
+import joblib
 import re
 import string
 import emoji
@@ -58,10 +58,9 @@ def preprocess_text(text):
 @st.cache_resource
 def load_model():
     try:
-        # MENGGUNAKAN MODEL OPTIMASI TERBAIK!
-        with open('naivebayes_optimized.pkl', 'rb') as f:
-            return pickle.load(f)
-    except FileNotFoundError:
+        return joblib.load('naivebayes_optimized.pkl')
+    except Exception as e:
+        print(e)
         return None
 
 model = load_model()
